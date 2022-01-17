@@ -1,0 +1,30 @@
+.hover_border:hover{
+    
+    -fx-border-color: #0fbcf9;
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-background-color: #34e7e4e0;
+    -fx-cursor: hand;
+    
+}
+
+.cursor_hand{
+     -fx-cursor: hand;
+    
+}
+.reveal .fa{
+    
+    -fx-fill: #485460;
+
+}
+.glyph-icon{ -fx-font-family:"FontAwesome"; }
+.hover_fade:hover{
+    -fx-background-color: #e2e2e2 !important;
+}
+.sidebar{
+    
+    -fx-background-color: #01509F;
+    -fx-text-fill:  #ffffff;
+    -fx-background-radius: 35px;
+    -fx-cursor: hand;
+    
+}

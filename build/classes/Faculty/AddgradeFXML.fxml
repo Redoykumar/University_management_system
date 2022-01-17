@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="695.0" spacing="11.0" styleClass="tooltip" stylesheets="@../themes.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Faculty.AddgradeFXMLController">
+   <children>
+      <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tooltip" text="Add Spasafic Student Grade">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Text>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" spacing="5.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TextField fx:id="SearchF" promptText="Search ID" />
+            <ImageView fitHeight="23.0" fitWidth="26.0" onMouseClicked="#DoSearch" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/search-solid.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <ImageView fx:id="ImageV" fitHeight="94.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox prefWidth="4.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" />
+            <Label fx:id="NameF" style="-fx-background-color: #000000;" stylesheets="@../themes.css">
+               <HBox.margin>
+                  <Insets left="11.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID :" />
+            <Label fx:id="IdF" style="-fx-background-color: #000000;" stylesheets="@../themes.css">
+               <HBox.margin>
+                  <Insets left="11.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Age :" />
+            <Label fx:id="AgeF" style="-fx-background-color: #000000;" stylesheets="@../themes.css">
+               <HBox.margin>
+                  <Insets left="11.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email :" />
+            <Label fx:id="EmailF" style="-fx-background-color: #000000;" stylesheets="@../themes.css">
+               <HBox.margin>
+                  <Insets left="11.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone :" />
+            <Label fx:id="PhonoF" style="-fx-background-color: #000000;" stylesheets="@../themes.css">
+               <HBox.margin>
+                  <Insets left="11.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Deprtment :" />
+            <Label fx:id="Dep" layoutX="79.0" layoutY="10.0" style="-fx-background-color: #000000;" stylesheets="@../themes.css" />
+         </children>
+      </HBox>
+      <HBox spacing="9.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Major :" />
+            <TextField fx:id="MajorF" />
+         </children>
+      </HBox>
+      <HBox spacing="8.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Samister :" />
+            <TextField fx:id="SamisterF" />
+         </children>
+      </HBox>
+      <HBox spacing="8.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mark:" />
+            <TextField fx:id="MarkF" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Label fx:id="Info">
+               <HBox.margin>
+                  <Insets left="11.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="15.0">
+         <children>
+            <Label fx:id="EmailF1">
+               <HBox.margin>
+                  <Insets left="11.0" />
+               </HBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#DoAdd" prefHeight="26.0" prefWidth="74.0" styleClass="sidebar" stylesheets="@../style.css" text="Add">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#DoClear" prefHeight="26.0" prefWidth="76.0" styleClass="sidebar" stylesheets="@../style.css" text="Clear">
+               <HBox.margin>
+                  <Insets left="4.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="1.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

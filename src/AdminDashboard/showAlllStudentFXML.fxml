@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" styleClass="menu-down-arrow" stylesheets="@../themes.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminDashboard.ShowAlllStudentFXMLController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="20.0" prefWidth="600.0" stylesheets="@../themes.css" VBox.vgrow="ALWAYS">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Students list" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <TableView fx:id="TableV" editable="true" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="602.0" VBox.vgrow="SOMETIMES">
+        <columns>
+          <TableColumn fx:id="Id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="Name" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="Age" prefWidth="75.0" text="Age" />
+            <TableColumn fx:id="Email" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="Sex" prefWidth="75.0" text="Sex" />
+            <TableColumn fx:id="Depertment" prefWidth="75.0" text="D_id" />
+            <TableColumn fx:id="Phone" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="Address" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="T_id" prefWidth="75.0" text="Teacher ID" />
+        </columns>
+         <VBox.margin>
+            <Insets top="16.0" />
+         </VBox.margin>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <effect>
+            <Glow level="0.13" />
+         </effect>
+      </TableView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</VBox>
